@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>display.html</title>
+  <style>
+    body {
+      /*      border: solid red;*/
+    }
+
+    div {
+      border: solid;
+      width: 200px;
+      height: 100px;
+    }
+
+    p {
+      border: solid;
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+    }
+
+    p:nth-child(2) {
+      margin-left: -4px;
+      border-color: red;
+    }
+
+    span {
+      /*      border: solid;*/
+      width: 200px;
+      height: 100px;
+
+      font-size: 100px;
+    }
+  </style>
+</head>
+
+<!--  body is the container for div -->
+
+<body>
+  <h1>block</h1>
+  <ul>
+    <li>width: same as container width</li>
+    <li>height: 0</li>
+    <li>width/height can be changed</li>
+    <li>it takes whole line</li>
+  </ul>
+  <div></div>
+  <div></div>
+
+  <h1>inline-block</h1>
+  <ul>
+    <li>width: 0</li>
+    <li>height: 0</li>
+    <li>width/height can be changed</li>
+    <li>they can be put on the same line</li>
+  </ul>
+  <p></p>
+  <p></p>
+
+  <h1>inline</h1>
+  <ul>
+    <li>width: 0</li>
+    <li>width depends on the content</li>
+    <li>height depends on font-size</li>
+  </ul>
+  <span>text</span>
+  <span>text</span>
+
+  <h1>online</h1>
+  <ul>
+    <li>width</li>
+    <link rel="alternate" href="abc.xtl" type="application/atom+xml" title="Atom">
+  </ul>
+
+  <h1>
+    margin: auto
+    margin-left: auto
+    margin-right: auto
+  </h1>
+
+
+</body></html>
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>requirement_gradient.html</title>
+    <style>
+        .frame{
+            
+            width: 100px;
+            height: 100px;
+            font-size: 0;
+        }
+        .detail{
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        }
+        .lefttop{
+            background: linear-gradient(135deg, rgb(0, 255, 255) , white);
+        }
+        .righttop{
+            background: linear-gradient(315deg, rgb(0, 255, 255),white);
+        }
+        .leftbottom{
+            background: linear-gradient(45deg, rgb(0, 255, 255), white);
+        }
+        .rightbottom{
+            background: linear-gradient(225deg, rgb(0, 255, 255), white);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="frame">
+    <div class="detail lefttop"></div>
+    <div class="detail rightbottom"></div>
+    <div class="detail leftbottom"></div>
+    <div class="detail righttop"></div>
+    </div>
+
+</body>
+</html>
