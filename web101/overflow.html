@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Overflow</title>
+  <style>
+    #container {
+      border: solid;
+      height: 300px;
+      width: 300px;
+      /*      */
+      /*      default*/
+      overflow: visible;
+
+      overflow: hidden;
+      /* automatically add scrollbar*/
+      overflow: auto;
+      /*      always add scroolbar*/
+      overflow: scroll;
+    }
+
+    #item {
+      background: linear-gradient(to right, red, green, blue);
+      height: 100px;
+      width: 600px;
+    }
+
+    td {
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="item"></div>
+    <table border>
+      <tr>
+        <td>abcd</td>
+        <td>defg</td>
+        <td>adfadsf</td>
+        <td>adfaedfads</td>
+        <td>adfadsf</td>
+        <td>adfadsf</td>
+        <td>adfadsasdf</td>
+        <td>mike</td>
+        <td>merry</td>
+        <td>liang</td>
+      </tr>
+    </table>
+  </div>
+
+
+</body></html>

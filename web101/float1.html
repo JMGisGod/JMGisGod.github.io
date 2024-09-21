@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      border: solid blue;
+    }
+
+    .item {
+      width: 100px;
+    }
+
+    .left {
+      height: 100px;
+      background-color: dodgerblue;
+      float: left;
+    }
+
+    .right {
+      height: 200px;
+      width: 200px;
+      background-color: fuchsia;
+      float: right;
+    }
+
+    p {
+      border: solid 4px red;
+      /* don't put any floating elements on my left */
+      clear: left;
+
+      clear: right;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="item left"></div>
+    <div class="item right"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem laborum numquam distinctio aliquid rerum iusto praesentium dignissimos corporis minima! At molestiae, quos mollitia, assumenda optio eveniet inventore delectus natus.</p>
+  </div>
+
+</body></html>

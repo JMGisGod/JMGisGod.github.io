@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 300px;
+      border: solid 10px;
+      /*    method 1: lias */
+      /*      float: left;*/
+
+      /*      method 2: use hidden, auto*/
+      overflow: auto;
+    }
+
+    .item {
+      height: 200px;
+      float: left;
+    }
+
+    .left {
+      background-color: deepskyblue;
+      width: 100px;
+      opacity: 0.7;
+    }
+
+    .right {
+      background-color: red;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  #container>.item.left+.item.right-->
+  <div id="container">
+    <div class="item left"></div>
+    <div class="item right"></div>
+  </div>
+
+</body></html>
