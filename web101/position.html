@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
+    body {
+      height: 2000px;
+    }
+
     #container {
       border: solid;
       width: 300px;
       height: 300px;
       margin: auto;
+      /* non-static position */
+      position: relative;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
     }
 
     #item1 {
-      width: 100px;
-      height: 100px;
       background-color: deeppink;
       /*      default value*/
       position: static;
@@ -25,13 +34,29 @@
       right: 50px;
       bottom: 50px;
     }
+
+    #item2 {
+      background-color: lime;
+      /*      absolute keep looking for a container that has non-static position */
+      position: absolute;
+      right: 20px;
+    }
+
+    #item3 {
+      background-color: aqua;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 
 <body>
 
   <div id="container">
-    <div id="item1"></div>
+    <div id="item1" class='item'></div>
+    <div id="item2" class='item'></div>
+    <div id="item3" class="item"></div>
   </div>
 
 </body></html>

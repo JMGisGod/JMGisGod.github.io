@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    ul {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    p:before,
+    p:after {
+      content: '*';
+    }
+
+    div {
+      font-size: 50px;
+    }
+
+    div:before {
+      content: '';
+      /*      border: solid red;*/
+      display: inline-block;
+      height: 40px;
+      width: 84px;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXXd5dXfBvbDl54m4hyoYxNg8kEt67Wn6Vg&s);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>Eat</li>
+    <li>Sleep</li>
+    <li>Play</li>
+  </ul>
+
+  <p>Eat</p>
+  <p>Sleep</p>
+  <p>Play</p>
+  <p>Eat</p>
+  <p>Sleep</p>
+  <p>Play</p>
+  <!--  
+1 'content' make every element an list item
+2 'content' use css to create element
+3 'content' can be image 
+-->
+
+  <div>Yule</div>
+  <div>Mike</div>
+  <div>Jiaming</div>
+</body></html>

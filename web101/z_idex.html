@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 400px;
+      height: 400px;
+      border: solid;
+      position: relative;
+    }
+
+    .item {
+      width: 150px;
+      height: 150px;
+      font-size: 100px;
+      color: white;
+    }
+
+    #item1 {
+      background-color: black;
+      z-index: 5;
+      position: relative;
+    }
+
+    #item2 {
+      background-color: forestgreen;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--  #container>.item#item1+.item#item2-->
+  <div id="container">
+    <div class="item" id="item1">1</div>
+    <div class="item" id="item2">2</div>
+  </div>
+
+</body></html>
