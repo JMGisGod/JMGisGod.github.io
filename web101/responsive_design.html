@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /*    responsive design */
+    /*    responsive to screen size */
+    /*    always do mobile first*/
+    /*    mobile screen*/
+    div {
+      border: solid;
+      height: 100px;
+      background-color: lime;
+    }
+
+    body:before {
+      content: 'mobile';
+      font-size: 80px;
+      display: block;
+    }
+
+    /*    tablet screen */
+    @media all and (min-width:700px) {
+      div {
+        display: inline-block;
+        width: 48%;
+        background-color: deepskyblue;
+      }
+
+      body:before {
+        content: 'tablet';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width:900px) {
+      div {
+        width: 31%;
+        background-color: red;
+      }
+
+      body:before {
+        content: 'desktop';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1200px) {
+      div {
+        width: 20%;
+        background-color: mediumpurple;
+      }
+
+      body:before {
+        content: 'TV';
+        font-size: 80px;
+      }
+    }
+
+    @media print {
+      div {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</body></html>

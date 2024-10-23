@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        ul {
+            font-size: 60px;
+        }
+
+        li {
+            color: blue !important;
+        }
+
+        li.first {
+            color: lime !important;
+        }
+
+        ul li.first {
+            color: fuchsia;
+        }
+
+        li#fir {
+            color: mediumpurple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>!important>inline style>id>class>tag</h1>
+    <h1>longer selector>short selector</h1>
+    <ul>
+        <li id="fir" class="first" style="color: black;">Pickelball</li>
+        <li class="first">Tennis</li>
+        <li>Hiking</li>
+        <li>With friend</li>
+    </ul>
+    
+</body>
+</html>
