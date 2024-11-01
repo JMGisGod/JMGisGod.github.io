@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      border: solid;
+      width: 600px;
+    }
+
+    .item {
+      width: 300px;
+      height: 200px;
+      font-size: 50px;
+      display: inline-block;
+    }
+
+    .item:first-child {
+      background-color: deepskyblue;
+      border: solid 20px;
+      padding: 18px;
+
+      /*      by default, box-sizing value is "content-box" which means the width/height are for content, not include padding and border */
+      box-sizing: content-box;
+
+      /*      box-sizing redefine width and height */
+      /* box sizing重新定义了width和hight contentbox是width和hight是content的范围border padding + border + content */
+      box-sizing: border-box;
+      /*      */
+      vertical-align: top;
+    }
+
+    .item:last-child {
+      background-color: yellowgreen;
+      margin-left: -4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="item">left</div>
+    <div class="item">right</div>
+  </div>
+</body></html>
