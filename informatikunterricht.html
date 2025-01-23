@@ -88,6 +88,28 @@
             background-size: contain;
         }
 
+        #aufbau {
+            text-align: center;
+            color: black;
+            background-color: #1abc9c;
+            background-image: url(https://simonknott.de/assets/rechnernetzwerke/header.png);
+            background-size: contain;
+        }
+
+        #komponent {
+            text-align: center;
+            color: red;
+            background-color: #1abc9c;
+            background-image: url(https://lh6.googleusercontent.com/proxy/ZhceeUFLPdUkKgJQ9oS8aHt8pvJsFwJokbO3Y-stX5Pl82-ee9aEerJ4cvidDNjaZrmJTMClqOH5pw7gF-XQ9OaD1pM0BVQCumi_Obk2Hw0s4Yss);
+            background-size: contain;
+        }
+
+        #provider {
+            text-align: center;
+            background-color: #1abc9c;
+        }
+
+
         div hr {
             height: 3px;
             background-color: white;
@@ -210,6 +232,66 @@
         <h3>Das Zusammenspiel von privaten (Intranet) und öffentlichen Netzwerken (Internet) zeigt, wie Rechnernetze die Basis für moderne Kommunikationstechnologien geschaffen haben.</h3>
 
     </div>
+
+    <div id="aufbau">
+        <h1>Rechnernetze</h1>
+        <h1>Aufbau <i class="fa-solid fa-minus"></i> <i class="fa fa-star"></i> <i class="fa-solid fa-minus"></i> Bestandteile <i class="fa-solid fa-minus"></i> <i class="fa fa-star"></i> <i class="fa-solid fa-minus"></i> Funktion</h1>
+        <i class="fa-solid fa-arrow-down fa-bounce"></i>
+        <h4>Rechnernetze bestehen aus verschiedenen Netzwerkkomponenten, die gemeinsam eine effiziente und sichere Kommunikation ermöglichen.</h4>
+        <h4>Zudem sind Internet-Provider ein wichtiger Bestandteil, da sie den Zugang zum Internet bereitstellen.</h4>
+        <h4>Im Folgenden werden die Komponenten und ihre Funktionen beschrieben.</h4>
+        <i class="fa-solid fa-arrow-down-long fa-shake"></i>
+    </div>
+
+    <div id="komponent">
+        <h1>Netzwerkkomponenten</h1>
+        <h2>Switch:</h2>
+        <h4>Ein Switch verbindet mehrere Geräte (z. B. Computer, Drucker) innerhalb eines lokalen Netzwerks (LAN).</h4> 
+        <h4>Er arbeitet auf der Datenverbindungsschicht (Layer 2) des OSI-Modells.</h4>
+        <h4>Funktion: Erkennt die Zieladresse von Datenpaketen und leitet sie nur an das jeweilige Zielgerät weiter.</h4>
+        <h4>Vorteil: Effizienter als ein Hub, da der Datenverkehr gezielt gesteuert wird.</h4>
+        <h2>Hub:</h2>
+        <h4>Ein Hub ist eine ältere Technologie zur Verbindung von Netzwerkgeräten</h4>
+        <h4>Funktion: Verteilt eingehende Datenpakete an alle angeschlossenen Geräte, ohne zu prüfen, welches Gerät das Paket benötigt.</h4>
+        <h4>Nachteil: Führt zu unnötigem Datenverkehr und Leistungseinbußen.</h4>
+        <h2>Router:</h2>
+        <h4>Ein Router verbindet verschiedene Netzwerke, z. B. ein lokales Netzwerk mit dem Internet.</h4>
+        <h4>Funktion: Leitet Datenpakete basierend auf IP-Adressen an ihr Zielnetzwerk weiter.</h4>
+        <h4>Zusatzfunktion: Häufig mit einer Firewall ausgestattet, um unerwünschten Datenverkehr zu blockieren.</h4>
+        <h2>DNS-Server (Domain Name System)</h2>
+        <h4>Ein DNS-Server übersetzt menschenlesbare Domain-Namen (z. B. www.beispiel.de) in IP-Adressen, die Computer verstehen können.</h4>
+        <h4>Funktion: Macht die Nutzung des Internets für Menschen einfacher, indem Domains statt schwer zu merkender IP-Adressen verwendet werden können.</h4>
+        <h2>DHCP-Server (Dynamic Host Configuration Protocol)</h2>
+        <h4>Ein DHCP-Server weist Geräten in einem Netzwerk automatisch IP-Adressen zu.</h4>
+        <h4>Funktion: Spart Zeit und vermeidet Konflikte, da die Adressierung nicht manuell erfolgen muss.</h4>
+        <h4>Beispiel: Wenn ein Laptop eine WLAN-Verbindung herstellt, erhält es automatisch eine IP-Adresse vom DHCP-Server.</h4>
+        <h2>Gateway</h2>
+        <h4>Ein Gateway dient als Schnittstelle zwischen verschiedenen Netzwerken oder Protokollen.</h4>
+        <h4>Funktion: Ermöglicht die Kommunikation zwischen Netzwerken mit unterschiedlichen Technologien, z. B. einem lokalen Netzwerk und dem Internet.</h4>
+        <h2>Proxy</h2>
+        <h4>Ein Proxy-Server vermittelt zwischen einem Client (z. B. einem Computer) und einem Zielserver.</h4>
+        <h4>Funktion:</h4>
+        <h4>Sicherheit: Kann den Datenverkehr überwachen und filtern.</h4>
+        <h4>Leistung: Speichert häufig abgerufene Inhalte (Caching), um die Ladezeit zu verringern.</h4>
+        <h4>Anonymität: Verbirgt die IP-Adresse des Clients.</h4>
+    </div>
+
+    <div id="provider">
+        <h1>Internet-Provider (ISP)</h1>
+        <h3>Ein Internet-Provider (ISP) ist ein Dienstleister, der den Zugang zum Internet bereitstellt.</h3>
+        <h2>Dienstleistungen eines ISPs:</h2>
+        <h4>Internetanschluss: Bereitstellung von Breitbandzugängen über DSL, Kabel, Glasfaser oder Satellit.</h4>
+        <h4>Domain-Hosting: Registrierung und Hosting von Domain-Namen und Webseiten.</h4>
+        <h4>E-Mail-Dienste: Verwaltung von E-Mail-Adressen und Postfächern.</h4>
+        <h4>Technischer Support: Unterstützung bei Verbindungsproblemen und Netzwerkkonfiguration.</h4>
+        <h4>Zusatzdienste: Bereitstellung von Sicherheitslösungen wie Firewalls oder VPN-Diensten.</h4>
+        <h2>Bedeutung des ISPs:</h2>
+        <h4>Der Internet-Provider stellt die Verbindung zwischen lokalen Netzwerken (z. B. einem Heimnetzwerk) und dem weltweiten Internet her. Ohne ISPs wäre der Zugang zum Internet nicht möglich.</h4>
+
+
+    </div>
+
+
     <footer>
         <h2>CONTACT ME</h2>
         <hr>
