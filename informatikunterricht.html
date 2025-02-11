@@ -10,13 +10,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         header {
-            background-color: #1abc9c;
-            text-align: center;
-            color: white;
-            padding: 80px 0;
-            background-image: url(https://telematics.tm.kit.edu/img/rechnernetze.jpg);
-
+        position: relative;
+        text-align: center;
+        color: #2c3d50;
+        padding: 80px 0;
+        overflow: hidden;
         }
+
+        header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://telematics.tm.kit.edu/img/rechnernetze.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; 
+        z-index: -1;
+        }
+
+
 
         header img {
             width: 200px;
@@ -29,7 +44,7 @@
 
         header hr {
             height: 3px;
-            background-color: white;
+            background-color: #2c3d50;
             width: 100px;
             border: solid 1px;
             border-radius: 5px;
@@ -41,18 +56,31 @@
 
         /* Rechnernetze   */
         #Rechnernetze {
-            text-align: center;
-            background-color: white;
-            color: #2c3d50;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdiOaq3u_QX85sHHreloi35fduz2ALaVCCQ&s);
-            background-image: transparent;
+        position: relative;
+        text-align: center;
+        color: #2c3d50;
         }
+
+        #Rechnernetze::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdiOaq3u_QX85sHHreloi35fduz2ALaVCCQ&s);
+        background-size: cover;
+        opacity: 0.5; /* Adjust transparency */
+        z-index: -1;
+        }
+
+
         #Rechnernetze h4{
-            text-align: center;
+            text-align: left;
             font-size: 20px;
             width: 1200px;
             height: 100px;
-            color: black;
+            color: #2c3d50;
         }
 
         #Rechnernetze hr {
@@ -65,60 +93,183 @@
         }
 
         #about {
-            text-align: center;
-            color: rgb(255, 0, 0);
-            background-color: #1abc9c;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBq3cgmZ-FJxp8nWiGro0MPqI-WPWJeYrZ1Q&s);
-            background-size: contain;
-
+        position: relative;
+        text-align: center;
+        color: #2c3d50;
+        padding: 50px;
+        overflow: hidden;
         }
+
+        #about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBq3cgmZ-FJxp8nWiGro0MPqI-WPWJeYrZ1Q&s);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz anpassen */
+        z-index: -1;
+        }
+
+
+
+        #about h1 {
+            text-align: center;
+        }
+
 
         #about h2 {
             font-size: 30px;
+            text-align: center;
         }
 
         #about h3 {
             font-size: 19px;
+            text-align: left;
         }
 
         #verbindung {
-            text-align: center;
-            color: black;
-            background-color: #1abc9c;
-            background-image: url(https://www.redim.de/images/grafiken/intranet.png);
-            background-size: contain;
+        position: relative;
+        text-align: center;
+        color: black;
+        padding: 50px;
+        overflow: hidden;
         }
+
+        #verbindung::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://www.redim.de/images/grafiken/intranet.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz anpassen */
+        z-index: -1;
+        }
+
+        #verbindung h3 {
+            font-size: 19px;
+            text-align: left;
+        }
+
+
 
         #aufbau {
-            text-align: center;
-            color: black;
-            background-color: #1abc9c;
-            background-image: url(https://simonknott.de/assets/rechnernetzwerke/header.png);
-            background-size: contain;
+        position: relative;
+        text-align: center;
+        color: black;
+        overflow: hidden;
         }
+
+        #aufbau::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://simonknott.de/assets/rechnernetzwerke/header.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz angepasst */
+        z-index: -1;
+        }
+
+        #aufbau h4 {
+            text-align: left;
+        }
+        
 
         #komponent {
-            text-align: center;
-            color: red;
-            background-color: #1abc9c;
-            background-image: url(https://lh6.googleusercontent.com/proxy/ZhceeUFLPdUkKgJQ9oS8aHt8pvJsFwJokbO3Y-stX5Pl82-ee9aEerJ4cvidDNjaZrmJTMClqOH5pw7gF-XQ9OaD1pM0BVQCumi_Obk2Hw0s4Yss);
-            background-size: contain;
+        position: relative;
+        text-align: center;
+        color: #2c3d50;
+        overflow: hidden;
         }
 
+        #komponent::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://lh6.googleusercontent.com/proxy/ZhceeUFLPdUkKgJQ9oS8aHt8pvJsFwJokbO3Y-stX5Pl82-ee9aEerJ4cvidDNjaZrmJTMClqOH5pw7gF-XQ9OaD1pM0BVQCumi_Obk2Hw0s4Yss);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz angepasst */
+        z-index: -1;
+        }
+
+
+        #komponent h2 {
+            text-align: left;
+        }
+
+
+        #komponent h4 {
+            text-align: left;
+        }
+
+
+
         #provider {
-            text-align: center;
-            background-color: #1abc9c;
-            background-image: url(https://www.openpr.com/wiki/images/710-400x300_4770);
-            background-size: contain;
-            color: red;
+        position: relative;
+        text-align: center;
+        color: black;
+        overflow: hidden;
+        }
+
+        #provider::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://www.openpr.com/wiki/images/710-400x300_4770);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz angepasst */
+        z-index: -1;
+        }
+
+        #provider h2 {
+            text-align: left;
+        }
+
+        #provider h4 {
+            text-align: left;
         }
 
         #ende {
-            text-align: center;
-            background-color: #1abc9c;
-            background-image: url(https://www.dr-datenschutz.de/wp-content/uploads/2015/09/internet-funktionsweise.jpg);
-            background-size: contain;
+        position: relative;
+        text-align: center;
+        color: black;
+        overflow: hidden;
         }
+
+        #ende::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://www.dr-datenschutz.de/wp-content/uploads/2015/09/internet-funktionsweise.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Transparenz angepasst */
+        z-index: -1;
+        }
+
+
 
 
         div hr {
@@ -148,6 +299,13 @@
             color: gray;
         }
 
+        .icon-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
     </style>
 </head>
 
@@ -159,7 +317,7 @@
         <hr>
     </header>
     <div id="Rechnernetze">
-        <h1>Recrhnenetze als Vorstufe des Themas Internet</h1>
+        <h1>Rechnernetze als Vorstufe des Themas Internet</h1>
         <div class="seperator">
             <hr>
             <i class="fa fa-star"></i>
