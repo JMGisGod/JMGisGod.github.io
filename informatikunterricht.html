@@ -9,6 +9,29 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .nav-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+
+        .nav-buttons button {
+            background-color: #2c3d50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            }
+
+        .nav-buttons button:hover {
+            background-color: #1a242f;
+            }
+
         header {
         position: relative;
         text-align: center;
@@ -307,10 +330,31 @@
         }
 
     </style>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                }
+        }
+    </script>
 </head>
 
 <body>
     <header>
+        <div class="sticky-nav">
+            <div class="nav-buttons">
+              <button onclick="scrollToSection('Rechnernetze')">Rechnernetze</button>
+              <button onclick="scrollToSection('about')">Intranet & Internet</button>
+              <button onclick="scrollToSection('verbindung')">Verbindung</button>
+              <button onclick="scrollToSection('aufbau')">Aufbau</button>
+              <button onclick="scrollToSection('komponent')">Komponenten</button>
+              <button onclick="scrollToSection('provider')">Provider</button>
+              <button onclick="scrollToSection('ende')">Fazit</button>
+            </div>
+        </div>
+          
         <h1>Rechnernetze</h1>
         <hr>
         <i class="fa fa-star"></i>
@@ -431,10 +475,6 @@
     <hr>
 
     &copy; copyright-qingfeng
-
-
-
-
 </body>
 
 </html>
